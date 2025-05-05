@@ -6,6 +6,25 @@ import Button from '../../components/Button';
 export const metadata = {
   title: 'About - DarkNode',
   description: 'Learn more about DarkNode and our mission to protect your privacy in crypto transactions.',
+  openGraph: {
+    title: 'About DarkNode - The VPN for RPC Services',
+    description: 'Learn more about DarkNode and our mission to protect your privacy in crypto transactions.',
+    images: [
+      {
+        url: '/preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'DarkNode - Privacy for Crypto Transactions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About DarkNode - The VPN for RPC Services',
+    description: 'Learn more about DarkNode and our mission to protect your privacy in crypto transactions.',
+    images: ['/preview.png'],
+    creator: '@darknoderpc',
+  },
 };
 
 export default function About() {

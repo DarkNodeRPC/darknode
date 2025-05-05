@@ -6,6 +6,25 @@ import ActiveSubscriptions from '../../components/ActiveSubscriptions';
 export const metadata = {
   title: 'Dashboard - DarkNode',
   description: 'Convert your RPC URLs to DarkNode RPCs for enhanced privacy.',
+  openGraph: {
+    title: 'Dashboard - DarkNode',
+    description: 'Convert your RPC URLs to DarkNode RPCs for enhanced privacy and security.',
+    images: [
+      {
+        url: '/preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'DarkNode - Privacy for Crypto Transactions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dashboard - DarkNode',
+    description: 'Convert your RPC URLs to DarkNode RPCs for enhanced privacy and security.',
+    images: ['/preview.png'],
+    creator: '@darknoderpc',
+  },
 };
 
 export default function Dashboard() {

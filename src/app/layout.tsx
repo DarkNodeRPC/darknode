@@ -18,6 +18,30 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DarkNode - Privacy for Crypto Transactions",
   description: "DarkNode routes your transactions through our native RPC, protecting your privacy and preventing data logging.",
+  metadataBase: new URL('https://darknode.pro'),
+  openGraph: {
+    title: "DarkNode - The VPN for RPC Services",
+    description: "DarkNode routes your transactions through our secure infrastructure, protecting your privacy and preventing data logging.",
+    url: "https://darknode.pro",
+    siteName: "DarkNode",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "DarkNode - Privacy for Crypto Transactions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DarkNode - The VPN for RPC Services",
+    description: "DarkNode routes your transactions through our secure infrastructure, protecting your privacy and preventing data logging.",
+    images: ["/preview.png"],
+    creator: "@darknoderpc",
+  },
 };
 
 export default function RootLayout({
