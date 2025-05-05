@@ -20,18 +20,18 @@ export const createMockWallet = () => {
       return;
     },
     
-    sendTransaction: async (transaction: any, connection: any) => {
+    sendTransaction: async (transaction: unknown) => {
       console.log('Mock wallet sending transaction', transaction);
       // Return a mock transaction signature
       return 'MOCK_TRANSACTION_SIGNATURE';
     },
     
-    signTransaction: async (transaction: any) => {
+    signTransaction: async (transaction: unknown) => {
       console.log('Mock wallet signing transaction', transaction);
       return transaction;
     },
     
-    signAllTransactions: async (transactions: any[]) => {
+    signAllTransactions: async (transactions: unknown[]) => {
       console.log('Mock wallet signing all transactions', transactions);
       return transactions;
     },

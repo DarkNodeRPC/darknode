@@ -54,7 +54,7 @@ export default function About() {
                 DarkNode acts as an intermediary between you and the blockchain. When you use a standard RPC provider, they can log your IP address and transaction data. DarkNode prevents this by routing your transactions through our secure infrastructure.
               </p>
               <p>
-                Here's how it works:
+                This is how it works:
               </p>
               <ol className="list-decimal list-inside space-y-2">
                 <li>You connect to DarkNode's RPC endpoint instead of a standard RPC</li>
@@ -72,7 +72,7 @@ export default function About() {
             <h2 className="text-2xl font-bold text-white mb-4">$DNODE Token</h2>
             <div className="space-y-4 text-gray-300">
               <p>
-                The $DNODE token is the native utility token of the DarkNode ecosystem. It's used to pay for subscriptions to our privacy-focused RPC service.
+                The $DNODE token is the native utility token of the DarkNode ecosystem. It is used to pay for subscriptions to our privacy-focused RPC service.
               </p>
               <p>
                 Token details:

@@ -1,5 +1,5 @@
 import { Connection, PublicKey, Transaction } from '@solana/web3.js';
-import { createTransferInstruction, getAssociatedTokenAddress, getAccount, TOKEN_PROGRAM_ID } from '@solana/spl-token';
+import { createTransferInstruction, getAssociatedTokenAddress } from '@solana/spl-token';
 
 // The cost in $DNODE tokens for a monthly subscription
 export const SUBSCRIPTION_COST = 10000;
@@ -10,7 +10,7 @@ export const RECIPIENT_ADDRESS = 'bidErSQzKtUihyTQ2PqLeY6Mb2uaGQSUqPf85uX5VZr';
 // Function to transfer tokens for subscription
 export async function burnTokensForSubscription(
   connection: Connection,
-  wallet: any, // This will be the wallet adapter
+  wallet: Record<string, any>, // This will be the wallet adapter
   amount: number = SUBSCRIPTION_COST
 ): Promise<boolean> {
   try {
@@ -102,7 +102,7 @@ export async function hasEnoughTokens(
       const hasEnough = Number(tokenBalance.value.amount) >= amount;
       console.log('User has enough tokens:', hasEnough);
       return hasEnough;
-    } catch (err) {
+    } catch (_err) {
       // If the token account doesn't exist, the user doesn't have any tokens
       console.log('Token account not found or error getting balance');
       return false;

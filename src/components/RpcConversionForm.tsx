@@ -2,12 +2,11 @@
 
 import React, { useState } from 'react';
 import { useWallet, useConnection } from '@solana/wallet-adapter-react';
-import { PublicKey } from '@solana/web3.js';
 import Button from './Button';
 import Input from './Input';
 import Card from './Card';
 import { isValidRpcUrl, testRpcUrl } from '../utils/rpc';
-import { burnTokensForSubscription, hasEnoughTokens, SUBSCRIPTION_COST } from '../utils/token';
+import { hasEnoughTokens, SUBSCRIPTION_COST } from '../utils/token';
 import { generateDarkNodeRpcUrls, generateApiKey, storeRpcMapping } from '../lib/db';
 
 interface RpcConversionFormProps {
@@ -16,7 +15,7 @@ interface RpcConversionFormProps {
 
 export const RpcConversionForm: React.FC<RpcConversionFormProps> = ({ onSuccess }) => {
   const { connection } = useConnection();
-  const { publicKey, connected, wallet } = useWallet();
+  const { publicKey, connected } = useWallet();
   
   const [rpcUrl, setRpcUrl] = useState('');
   const [isLoading, setIsLoading] = useState(false);

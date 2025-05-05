@@ -17,15 +17,15 @@ export async function testRpcUrl(rpcUrl: string): Promise<boolean> {
       await connection.getTokenSupply(tokenPublicKey);
       console.log('RPC test successful: Token supply retrieved');
       return true;
-    } catch (err) {
+    } catch (_err) {
       // If getting token supply fails, try getting recent blockhash as a fallback
       console.log('Failed to get token supply, trying recent blockhash');
       const { blockhash } = await connection.getLatestBlockhash();
       console.log('RPC test successful: Recent blockhash retrieved', blockhash);
       return true;
     }
-  } catch (error) {
-    console.error('Error testing RPC URL:', error);
+  } catch (_error) {
+    console.error('Error testing RPC URL:');
     return false;
   }
 }
@@ -41,8 +41,8 @@ export async function getRecentTransaction(rpcUrl: string): Promise<string | nul
     
     // If we get here, the RPC is working
     return blockhash;
-  } catch (error) {
-    console.error('Error getting recent transaction:', error);
+  } catch (_error) {
+    console.error('Error getting recent transaction:');
     return null;
   }
 }
@@ -58,7 +58,7 @@ export function isValidRpcUrl(url: string): boolean {
        parsedUrl.protocol === 'wss:') &&
       !!parsedUrl.hostname
     );
-  } catch (error) {
+  } catch (_error) {
     return false;
   }
 }

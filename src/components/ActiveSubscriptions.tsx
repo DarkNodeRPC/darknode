@@ -69,7 +69,7 @@ export const ActiveSubscriptions: React.FC = () => {
             </div>
           ) : (
             <div className="text-center py-4">
-              <p className="text-gray-300">You don't have any active subscriptions yet.</p>
+              <p className="text-gray-300">You do not have any active subscriptions yet.</p>
               <p className="text-gray-400 text-sm mt-2">Convert an RPC URL to get started.</p>
             </div>
           )}

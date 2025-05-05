@@ -42,7 +42,7 @@ export const WalletContextProvider: FC<WalletContextProviderProps> = ({ children
       new MathWalletAdapter(),
       new CloverWalletAdapter(),
     ],
-    [network]
+    []
   );
 
   return (

@@ -25,11 +25,9 @@ export const MockWalletConnector: React.FC<MockWalletConnectorProps> = ({
       // This is a hack for demo purposes only
       // In a real app, the wallet would be connected properly through the wallet adapter
       if (wallet.wallet) {
-        // @ts-ignore - This is a hack for demo purposes
-        wallet.wallet.adapter = mockWallet;
-        // @ts-ignore - This is a hack for demo purposes
+        // Hack for demo purposes - not type-safe but works for demonstration
+        wallet.wallet.adapter = mockWallet as any;
         wallet.publicKey = mockWallet.publicKey;
-        // @ts-ignore - This is a hack for demo purposes
         wallet.connected = true;
         
         console.log('Mock wallet connected with public key:', mockWallet.publicKey.toString());
