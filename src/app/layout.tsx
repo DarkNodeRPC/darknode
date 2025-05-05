@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "DarkNode",
     images: [
       {
-        url: "/preview.png",
+        url: "https://raw.githubusercontent.com/DarkNodeRPC/darknode/master/public/preview.png",
         width: 1200,
         height: 630,
         alt: "DarkNode - Privacy for Crypto Transactions",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DarkNode - The VPN for RPC Services",
     description: "DarkNode routes your transactions through our secure infrastructure, protecting your privacy and preventing data logging.",
-    images: ["/preview.png"],
+    images: ["https://raw.githubusercontent.com/DarkNodeRPC/darknode/master/public/preview.png"],
     creator: "@darknoderpc",
   },
 };
@@ -51,6 +51,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white min-h-screen flex flex-col`}
       >

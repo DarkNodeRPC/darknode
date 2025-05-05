@@ -11,7 +11,7 @@ export const metadata = {
     description: 'Convert your RPC URLs to DarkNode RPCs for enhanced privacy and security.',
     images: [
       {
-        url: '/preview.png',
+        url: 'https://raw.githubusercontent.com/DarkNodeRPC/darknode/master/public/preview.png',
         width: 1200,
         height: 630,
         alt: 'DarkNode - Privacy for Crypto Transactions',
@@ -22,7 +22,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Dashboard - DarkNode',
     description: 'Convert your RPC URLs to DarkNode RPCs for enhanced privacy and security.',
-    images: ['/preview.png'],
+    images: ['https://raw.githubusercontent.com/DarkNodeRPC/darknode/master/public/preview.png'],
     creator: '@darknoderpc',
   },
 };

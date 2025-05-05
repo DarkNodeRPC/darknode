@@ -11,7 +11,7 @@ export const metadata = {
     description: 'Learn more about DarkNode and our mission to protect your privacy in crypto transactions.',
     images: [
       {
-        url: '/preview.png',
+        url: 'https://raw.githubusercontent.com/DarkNodeRPC/darknode/master/public/preview.png',
         width: 1200,
         height: 630,
         alt: 'DarkNode - Privacy for Crypto Transactions',
@@ -22,7 +22,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'About DarkNode - The VPN for RPC Services',
     description: 'Learn more about DarkNode and our mission to protect your privacy in crypto transactions.',
-    images: ['/preview.png'],
+    images: ['https://raw.githubusercontent.com/DarkNodeRPC/darknode/master/public/preview.png'],
     creator: '@darknoderpc',
   },
 };
