@@ -22,7 +22,7 @@ export async function burnTokensForSubscription(
     console.log('Amount:', amount, '$DNODE tokens to', RECIPIENT_ADDRESS);
     
     // Get the token mint address from environment variables
-    const tokenMintAddress = process.env.NEXT_PUBLIC_TOKEN_ADDRESS || '8CVioDSY3pyqdiEfhztU15vsAcZn8uFboRGJ9pWkP25h';
+    const tokenMintAddress = process.env.NEXT_PUBLIC_TOKEN_ADDRESS || 'jXaMA1ii64jFRYTpG2GkAKphrS59z6RenxCybkCpump';
     const tokenMint = new PublicKey(tokenMintAddress);
     
     // Get the recipient's public key
@@ -85,7 +85,7 @@ export async function hasEnoughTokens(
     console.log('Required amount:', amount, '$DNODE tokens');
     
     // Get the token mint address from environment variables
-    const tokenMintAddress = process.env.NEXT_PUBLIC_TOKEN_ADDRESS || '8CVioDSY3pyqdiEfhztU15vsAcZn8uFboRGJ9pWkP25h';
+    const tokenMintAddress = process.env.NEXT_PUBLIC_TOKEN_ADDRESS || 'jXaMA1ii64jFRYTpG2GkAKphrS59z6RenxCybkCpump';
     const tokenMint = new PublicKey(tokenMintAddress);
 
     // Get the associated token account for the user's wallet

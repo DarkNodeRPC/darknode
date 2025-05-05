@@ -97,7 +97,7 @@ export default function About() {
                 Token details:
               </p>
               <ul className="list-disc list-inside space-y-2">
-                <li>Token Address: 8CVioDSY3pyqdiEfhztU15vsAcZn8uFboRGJ9pWkP25h</li>
+                <li>Token Address: jXaMA1ii64jFRYTpG2GkAKphrS59z6RenxCybkCpump</li>
                 <li>Blockchain: Solana</li>
                 <li>Requirement: Hold at least 10,000 $DNODE tokens</li>
               </ul>
